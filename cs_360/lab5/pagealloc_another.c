@@ -134,14 +134,15 @@ void *page_alloc(size_t pages) {
 	}
 
 	// scan through the BK region and find the free pages, loop through them and check the taken bits
-	
 	// loop through and search:
-	for (size_t i = 0; i < num_page; i++) {
+	for (size_t i = 0; i <= num_page - pages; i++) {
 		bool found = true;
+        size_t taken_pages_index = 0;
 		for(size_t j = 0; j< pages; j++) {
 			// do the first loop to check if the pages are taken with a 1 bit
 			if (test_bit(bookkeep, i + j, 0)) {
 				found = false;
+                taken_pages_index = i + j;
 				break; // searches next pages if these bits are already taken
 			}
 		}
@@ -157,18 +158,18 @@ void *page_alloc(size_t pages) {
                 }
 			}
 			return virtual_pool + i * PAGE_SIZE; // return the addr of the first page.
-		}
+		}else{
+            i = taken_pages_index; // skip ahead to the next page after the taken one.
+        }
 		// work on setting the last bit for the last page allocated.
 		// mark with the last bit
-		size_t last_page_index = i + pages - 1;
+		/*size_t last_page_index = i + pages - 1;
 		i = last_page_index;
-		return virtual_pool + i * PAGE_SIZE; // return the addr of the first page.
+		return virtual_pool + i * PAGE_SIZE; // return the addr of the first page.*/
 	}	
 	// if the loop exits, then we found no pages, so we just return out NULL. 
 	return NULL;
 }
-
-
 
 void page_free(void *addr) {
 	// free the block of pages specified by out pointer addr which should be returned from the page alloc

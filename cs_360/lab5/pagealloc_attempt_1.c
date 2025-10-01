@@ -150,7 +150,7 @@ void *page_alloc(size_t pages) {
 		size_t last_page_index = i + pages - 1;
 		set_bit(bookkeep, last_page_index + 1); // set the last bit to 0 with the correct index.
 		i = last_page_index;
-		return virtual_pool + i * PAGE_SIZE; // return the addr of the first page.
+		// return virtual_pool + i * PAGE_SIZE; // return the addr of the first page.
 	}	
 	// if the loop exits, then we found no pages, so we just return out NULL. 
 	return NULL;
