@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/isaacabella/Documents/School/mac_fall_2025/cs360/class_code/labs/page_alloc",
+      "program": "/Users/isaacabella/Documents/School/mac_fall_2025/cs360/class_code/labs/page_alloc/build/Debug/outDebug"
+    }
+  ]
+}

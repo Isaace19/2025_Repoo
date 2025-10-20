@@ -1,0 +1,34 @@
+Readers - Writers Problem
+
+only 1 can write ; three conditions
+
+(all three of these processes are done atomically, cannot be interrupted)
+if writing -> 0 Readers
+if reading -> infinite Readers
+if writing -> 0 writers
+
+uses semaphores to accomplish this. 
+
+sem_wait 
+sem_post
+sem_trywait
+sem_timedwait
+
+mutex - mutually exclusive when working with semaphores
+
+TODO - read part of the slide deck and html notes that goes over this in depth
+unnamed semaphore & named semaphores
+there are some differences between how they are kept in file system and in memory
+
+
+
+
+thread concepts 
+marshaller has several forks off of it
+they all lock the same semaphore, this requires shared memory
+this is how memory is shared between threads 
+
+
+
+
+can only read and write when the semaphore

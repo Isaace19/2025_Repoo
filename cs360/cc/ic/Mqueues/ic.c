@@ -1,0 +1,1 @@
+// In class coding for MQUEUES (Message Queues)

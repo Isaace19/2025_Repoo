@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/isaacabella/Documents/School/fall_2025/cs360/class_code/zybook/cpp_strings",
+      "program": "/Users/isaacabella/Documents/School/fall_2025/cs360/class_code/zybook/cpp_strings/build/Debug/outDebug"
+    }
+  ]
+}
