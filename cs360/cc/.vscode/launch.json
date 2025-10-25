@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/isaacabella/Documents/School/2025_Repoo/cs360/cc/ic/midterm2",
+      "program": "/Users/isaacabella/Documents/School/2025_Repoo/cs360/cc/ic/midterm2/build/Debug/outDebug"
+    }
+  ]
+}
