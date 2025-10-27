@@ -1,0 +1,69 @@
+# ----------------------------
+# OS and editor metadata
+# ----------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.code-workspace
+
+# ----------------------------
+# Python cache / virtualenv
+# ----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.env/
+.venv/
+venv/
+env/
+.Python
+
+# ----------------------------
+# C / C++ build artifacts
+# ----------------------------
+*.out
+*.o
+*.obj
+*.exe
+*.a
+*.so
+*.dll
+*.dSYM/
+build/
+cmake-build-*/
+Makefile
+CMakeCache.txt
+CMakeFiles/
+
+# ----------------------------
+# Logs and temp
+# ----------------------------
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.old
+
+# ----------------------------
+# Jupyter / notebooks (optional)
+# ----------------------------
+.ipynb_checkpoints/
+
+# ----------------------------
+# System backup files
+# ----------------------------
+*~
+*.orig
+*.rej
+
+# ----------------------------
+# Optional: ignore personal scratch notes
+# Uncomment if you don’t want to commit temp notes
+# ----------------------------
+# scratch/
+# drafts/
+
