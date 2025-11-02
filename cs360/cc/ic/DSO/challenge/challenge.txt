@@ -1,0 +1,19 @@
+Your template already shows two user supplied command line arguments
+ 1. argv[1] the name of a library stem. For example, A, libB, libC.so, or C.so
+    You need to propend ./ & if it doesn't start with lib, add it, and if it doesn't end iwth .so    add that as well. Any permutation of this can be given to your prgram like libCS or CS.so or     CS
+ 2. argv[2] the key value to match with the library to "authenticate" it.
+
+ Print ALL outputs to stdout. Anything printed to STDERR will be shown you but not graded if there's an error.
+
+Open the library , error check, and find a symbol called EXPORTS, if a library cannot open, print whatever the Dynamic Linker's Error is. 
+
+Check the key. if it does not match argv[2], then print "Error: key does not match\n" to stdout and quit.
+
+call the input function of the DSO and pass it a string buffer of at least 256 bytes, 
+ 1. print the buffer to stdout as "Input = "%s\n";
+
+ swap all character so the input is fully reversed (e.g "Hello\n" becomes "\nolleh")
+
+ call the output function of the DSO and pass it the reversed string
+
+ close and cleanup

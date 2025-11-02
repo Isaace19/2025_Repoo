@@ -22,8 +22,6 @@ int main(int argc, char* argv[]) {
 
     // read logic
 
-    
-
     mqd_t mq = mq_open(argv[1], O_RDWR);
     sem_t *sem = sem_open(argv[2], 0);
     int shm_fd = shm_open(argv[3], O_RDWR, 0);

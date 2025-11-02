@@ -1,0 +1,14 @@
+/* Next Steps to writing Pthread/DSO Practice program
+ *
+ * 1. Create worker thread function - calls func from .so file do work then return result back to marhsaller/parent
+ *
+ * 2. Next, spawn multiple threads now that step 1 is confirmed (ideally variable amount)
+ *
+ * 3. Work with sending terminate signals to the spawned threads (pthread_cond_broadcast)
+ *
+ * Final Stage: spawn multiple waiting threads dole out work, function calls.
+ * within worker function, and utilize pthread_cond_wait and should return unique function
+ * values to parent to be printed out to stdout to show all the unique pthread ids
+ *
+ * */
+
