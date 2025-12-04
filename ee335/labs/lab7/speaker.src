@@ -1,0 +1,10 @@
+New Circuit
+* Netlist:
+V1 1 0 DC 0 PULSE 0 1 50m
+R1 2 1 1000
+c1 2 0 100u
+.control
+tran 1ms 500ms 0ms 25ms
+plot v(2)
+.endc
+.end
