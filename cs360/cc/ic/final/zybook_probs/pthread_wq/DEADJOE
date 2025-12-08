@@ -1,0 +1,30 @@
+
+*** These modified files were found in JOE when it aborted on Mon Dec  8 09:07:10 2025
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+7 + 7
+ sin(72)
+ 1 + 1 + cos(74) + sin(67)
+
+*** File '(Unnamed)'
+q
+
+*** File '(Unnamed)'
+filereading.c
+solution.c
+solution.c
+/home/acikii/.tmux.conf
+tpool.c
+commandline.c
+filread.c
+openfopen.c
+PTWQ.c
+PTWQ.c
+PTWQ.c
+
+*** File '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc
